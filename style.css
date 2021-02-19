@@ -183,6 +183,7 @@ html,body{
 }
 
 .skillItem{
+    border: 1px solid red;
 }
 
 #pySKILL{
@@ -193,7 +194,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(35% 4%, 79% 17%, 95% 38%, 93% 83%, 59% 98%, 3% 86%, 28% 57%, 4% 30%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
 #pySKILL:hover{
@@ -211,7 +212,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(70% 0, 76% 20%, 100% 35%, 100% 70%, 88% 96%, 50% 100%, 11% 93%, 18% 56%, 3% 46%, 20% 10%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
 #swiftSKILL:hover{
@@ -229,7 +230,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(10% 2%, 90% 39%, 86% 96%, 12% 88%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
 #javaSKILL:hover{
@@ -247,7 +248,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(49% 45%, 80% 10%, 100% 35%, 92% 68%, 84% 90%, 50% 98%, 20% 90%, 6% 68%, 0% 35%, 20% 10%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
 #cSKILL:hover{
@@ -265,7 +266,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(61% 1%, 98% 11%, 99% 63%, 84% 86%, 47% 96%, 0 100%, 1% 80%, 8% 48%, 0 26%, 6% 4%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
 #htmlSKILL:hover{
@@ -283,7 +284,8 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(33% 26%, 88% 5%, 100% 91%, 83% 100%, 39% 96%, 4% 100%, 0 90%, 5% 65%, 31% 61%, 13% 31%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+
 }
 
 #jsSKILL:hover{
@@ -301,7 +303,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(50% 0%, 100% 0, 100% 34%, 94% 70%, 79% 89%, 45% 97%, 17% 89%, 4% 75%, 5% 53%, 14% 24%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
 #rubySKILL:hover{
@@ -319,7 +321,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: polygon(29% 13%, 63% 42%, 100% 34%, 88% 97%, 63% 89%, 38% 96%, 24% 87%, 3% 96%, 5% 53%, 1% 31%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 
 #sqlSKILL:hover{
@@ -327,6 +329,18 @@ html,body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+#dexSKILL{
+    grid-column: span 4;
+    grid-row: span 4;
+    background: url(media/dexter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: circle(0.0% at 0% 0%);
 }
 
 /*###########################################################################################page4*/
@@ -342,6 +356,7 @@ html,body{
     width: 100%;
     background: rgb(86,31,19);
     background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
+
 }
 #about-container{
     display: grid;

@@ -100,42 +100,48 @@ $("#classroomLabImage").click(function(){
 $(document).mousemove(function(e){
     $('#skills-letter-spacing').css({'letter-spacing':''+(e.pageY)/75 + 'px'})
 })
-
-for(i=1 ; i<=16*14 ; i++){
-    if(i == 21){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="pySKILL"></div>')
-        continue;
-    }
-    if(i == 40){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="swiftSKILL"></div>')
-        continue;
-    }
-    if(i == 52){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="javaSKILL"></div>')
-        continue;
-    }
-    if(i == 59){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="cSKILL"></div>')
-        continue;
-    }
-    if(i == 72){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="htmlSKILL"></div>')
-        continue;
-    }
-    if(i == 102){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="jsSKILL"></div>')
-        continue;
-    }
-    if(i == 118){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="rubySKILL"></div>')
-        continue;
-    }
-    if(i == 133){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="sqlSKILL"></div>')
+var skillsIds;
+skillsIds = {
+    5: "pySKILL",
+    8: "swiftSKILL",
+    33: "javaSKILL",
+    44: "cSKILL",
+    71:"dexSKILL",
+    78: "htmlSKILL",
+    85: "jsSKILL",
+    118: "rubySKILL",
+    121: "sqlSKILL"
+}
+    for(i = 1 ; i <= 16 * 10; i++){
+    if(skillsIds[i]!= undefined){
+        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="'+skillsIds[i]+'"></div>')
         continue;
     }
     document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem"></div>')
 }
+var lastX = 0;
+var lastY = 0;
+
+$(document).mousemove(function(e) {
+
+    var relX = (e.pageX -  $('#dexSKILL').offset().left) / 2.7;
+    var relY = (e.pageY - $('#dexSKILL').offset().top) / 2.7;
+     relX = Math.floor(relX);
+     relY = Math.floor(relY);
+    if(lastX != relX || lastY != relY){
+            console.log("X: "+relX+" | Y: "+relY + " ~~~~~~~ LAST X: "+ lastX + " | LAST Y: " + lastY);
+        $('#dexSKILL').css({'clip-path':'circle(25.0% at '+relX+'% '+relY+'%)'});
+    }
+
+    lastX = relX;
+    lastY = relY;
+//        clip-path: circle(25.0% at -5% -5%);
+
+});
+// $(document).mousemove(function(e){
+//     $('#dexSKILL').css({'clip-path':''+(e.pageY)/95 + 'px'})
+// })
+
 
 //##############################################################################################################page4
 
