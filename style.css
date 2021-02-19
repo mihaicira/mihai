@@ -178,12 +178,12 @@ html,body{
     display: grid;
     margin-top: 4vw;
     justify-content: center;
-    grid-template-columns: repeat(16,5vw);
-    grid-template-rows: repeat(14,5vw);
+    grid-template-columns: repeat(16,100px);
+    grid-template-rows: repeat(14,100px);
 }
 
 .skillItem{
-    border: 1px solid red;
+    border: 1px solid transparent;
 }
 
 #pySKILL{
@@ -340,7 +340,8 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     transition: .3s;
-    clip-path: circle(0.0% at 0% 0%);
+    clip-path: circle(0.0% at 5% 5%);
+    transition: .2s;
 }
 
 /*###########################################################################################page4*/

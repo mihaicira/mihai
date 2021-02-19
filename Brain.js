@@ -124,24 +124,19 @@ var lastY = 0;
 
 $(document).mousemove(function(e) {
 
-    var relX = (e.pageX -  $('#dexSKILL').offset().left) / 2.7;
-    var relY = (e.pageY - $('#dexSKILL').offset().top) / 2.7;
+    var relX = (e.pageX -  $('#dexSKILL').offset().left) / 4;
+    var relY = (e.pageY - $('#dexSKILL').offset().top) / 4;
      relX = Math.floor(relX);
      relY = Math.floor(relY);
-    if(lastX != relX || lastY != relY){
-            console.log("X: "+relX+" | Y: "+relY + " ~~~~~~~ LAST X: "+ lastX + " | LAST Y: " + lastY);
+    if((lastX != relX || lastY != relY) &&(relX>=0 || relY >=0)){
+            console.log("X: "+relX+" | Y: "+relY);// + " ~~~~~~~ LAST X: "+ lastX + " | LAST Y: " + lastY);
         $('#dexSKILL').css({'clip-path':'circle(25.0% at '+relX+'% '+relY+'%)'});
     }
 
     lastX = relX;
     lastY = relY;
-//        clip-path: circle(25.0% at -5% -5%);
 
 });
-// $(document).mousemove(function(e){
-//     $('#dexSKILL').css({'clip-path':''+(e.pageY)/95 + 'px'})
-// })
-
 
 //##############################################################################################################page4
 
