@@ -189,6 +189,7 @@ html,body{
 #pySKILL{
     grid-column: span 3;
     grid-row: span 3;
+    background: url(media/python2.png);
     background: url(media/python.png);
     background-size: contain;
     background-repeat: no-repeat;
