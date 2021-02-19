@@ -1,0 +1,404 @@
+html,body{
+    background: #353535;
+    margin: 0;
+    overflow-x: hidden;
+    /*scroll-behavior: smooth;*/
+}
+*{
+    color: wheat;
+}
+#navbar{
+    display: none;
+    height: 4vw;
+    margin: 3vw;
+    /*border: 6px solid #fd4b03;*/
+    border-bottom-right-radius: 30vw;
+    border-top-left-radius: 30vw;
+    background: transparent;
+    text-align: center;
+}
+#navbar p{
+    margin: auto;
+    padding: 1vw;
+}
+
+.scrambled_container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.scrambled_text{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    font-size: 28px;
+    color: wheat;
+}
+
+.dud {
+    color: #757575;
+}
+
+#stGrid{
+    display: grid;
+    margin-top: 4vw;
+    justify-content: center;
+    grid-template-columns: repeat(16,5vw);
+    grid-template-rows: repeat(7,5vw);
+}
+.stItem{
+    border: 2px solid transparent;
+    transition: .35s;
+
+}
+
+.topBorder{
+    border-top: 2px solid wheat;
+}
+
+.bottomBorder{
+    border-bottom: 2px solid wheat;
+}
+
+.rightBorder{
+    border-right: 2px solid wheat;
+}
+
+.gridPhoto{
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+#leftGridPhoto{
+    background: url(media/mihaiskist.png) no-repeat;
+    background-size: cover;
+    transition: .35s;
+}
+
+#leftGridPhoto:hover{
+    background: url(media/mihaiski.png) no-repeat;
+    background-size: cover;
+}
+
+#rightGridPhoto{
+    background: url(media/mihaip2st.png) no-repeat;
+    background-size: cover;
+    transition: .35s;
+}
+
+#rightGridPhoto:hover{
+    background: url(media/mihaip2.png) no-repeat;
+    background-size: cover;
+}
+
+/*#########################################################################################################*/
+
+
+#page2{
+    margin-top: 5vw;
+    margin-bottom: 25vw;
+    text-align: center;
+}
+#page2-border{
+    padding: 1vw;
+    height: 3vw;
+    width: 100%;
+    background: rgb(86,31,19);
+    background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
+}
+.project{
+    margin-top: 9vw;
+    height: 20vw;
+    width: 100%;
+
+}
+
+#classroomLabGrid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: repeat(1,15vw);
+    background:linear-gradient(-55deg,transparent 0% 2%,rgba(255,255,255,0.3) 2% 4%, transparent 4% 6% , rgba(255,255,255,0.5) 6% 8%, transparent 8%),linear-gradient(-45deg,#1a8cff 10% 25%,white 80%);
+    column-gap: 8vw;
+}
+#classroomLabImage{
+    margin-left: 2vw;
+    background: url(media/classroomlab.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: .2s;
+}
+#classroomLabImage:hover{
+    opacity: .5;
+}
+
+
+#officeAssistantGrid{
+    margin-top: 15vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 50vw 1fr;
+    grid-template-rows: 15vw;
+    background:linear-gradient(-45deg, #f6b26b 10% 40%,white 80%);
+    column-gap: 8vw;
+}
+
+.officeAssistantItem h1,.officeAssistantItem h2,.officeAssistantItem h3,.officeAssistantItem p{
+    color: black;
+}
+
+#officeAssistantImage{
+    margin-left: 2vw;
+    background: url(media/OA.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*##################################################################page3*/
+
+#page3{
+    text-align: center;
+    margin-bottom: 5vw;
+}
+#page3-border{
+    padding: 1vw;
+    height: 3vw;
+    width: 100%;
+    background: rgb(86,31,19);
+    background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
+}
+
+#skills-container{
+    display: grid;
+    margin-top: 4vw;
+    justify-content: center;
+    grid-template-columns: repeat(16,5vw);
+    grid-template-rows: repeat(14,5vw);
+}
+
+.skillItem{
+}
+
+#pySKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/python.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(35% 4%, 79% 17%, 95% 38%, 93% 83%, 59% 98%, 3% 86%, 28% 57%, 4% 30%);
+}
+
+#pySKILL:hover{
+    background: url(media/python2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#swiftSKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/swift.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(70% 0, 76% 20%, 100% 35%, 100% 70%, 88% 96%, 50% 100%, 11% 93%, 18% 56%, 3% 46%, 20% 10%);
+}
+
+#swiftSKILL:hover{
+    background: url(media/swift2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#javaSKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/java.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(10% 2%, 90% 39%, 86% 96%, 12% 88%);
+}
+
+#javaSKILL:hover{
+    background: url(media/java2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cSKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/c.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(49% 45%, 80% 10%, 100% 35%, 92% 68%, 84% 90%, 50% 98%, 20% 90%, 6% 68%, 0% 35%, 20% 10%);
+}
+
+#cSKILL:hover{
+    background: url(media/c2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#htmlSKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/html.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(61% 1%, 98% 11%, 99% 63%, 84% 86%, 47% 96%, 0 100%, 1% 80%, 8% 48%, 0 26%, 6% 4%);
+}
+
+#htmlSKILL:hover{
+    background: url(media/html2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#jsSKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/js.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(33% 26%, 88% 5%, 100% 91%, 83% 100%, 39% 96%, 4% 100%, 0 90%, 5% 65%, 31% 61%, 13% 31%);
+}
+
+#jsSKILL:hover{
+    background: url(media/js2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#rubySKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/ruby.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(50% 0%, 100% 0, 100% 34%, 94% 70%, 79% 89%, 45% 97%, 17% 89%, 4% 75%, 5% 53%, 14% 24%);
+}
+
+#rubySKILL:hover{
+    background: url(media/ruby2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sqlSKILL{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(media/sql.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+    clip-path: polygon(29% 13%, 63% 42%, 100% 34%, 88% 97%, 63% 89%, 38% 96%, 24% 87%, 3% 96%, 5% 53%, 1% 31%);
+}
+
+#sqlSKILL:hover{
+    background: url(media/sql2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*###########################################################################################page4*/
+
+#page4{
+    text-align: center;
+    margin-bottom: 15vw;
+}
+
+#page4-border{
+    padding: 1vw;
+    height: 3vw;
+    width: 100%;
+    background: rgb(86,31,19);
+    background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
+}
+#about-container{
+    display: grid;
+    margin-top: 5vw;
+    justify-content: center;
+    grid-template-columns: 30vw 30vw;
+    column-gap: 15vw;
+}
+.about-Item{
+    border: 2px solid white;
+    border-top: none;
+    padding: 10px;
+
+    padding-bottom: 1cm;
+}
+#aboutMe{
+    text-align: right;
+}
+#experience{
+    text-align: left;
+}
+.about-Item h1{
+    margin: 1vw;
+    width: 100%;
+    color: lightblue;
+}
+.hr_p{
+    border: 2px solid white;
+}
+.hr_s{
+    border: 1px solid white;
+    opacity: .5;
+}
+.text_pair{
+    display: grid;
+    margin: 10px;
+    justify-content: center;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1vw;
+    column-gap: 1vw;
+}
+.text_pair h4{
+    color: wheat;
+}
+
+.about-Item h4 span{
+    opacity: .5;
+}
+
+/*###########################################################################################page5*/
+
+#page5-border{
+    padding: 1vw;
+    height: 3vw;
+    width: 100%;
+    background: rgb(86,31,19);
+    background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
+    text-align: center;
+    margin-bottom: 100%;
+}
