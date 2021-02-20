@@ -147,6 +147,12 @@ $(document).mousemove(function(e) {
 
 $(document).ready(function(){
     $("#pySKILL").trigger('click');
+    $("#swiftSKILL").trigger('click');
+    $("#cSKILL").trigger('click');
+    $("#jsSKILL").trigger('click');
+    $("#javaSKILL").trigger('click');
+    $("#htmlSKILL").trigger('click');
+    $("#sqlSKILL").trigger('click');
 })
 
 //##############################################################################################################page4
