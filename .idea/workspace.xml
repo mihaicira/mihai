@@ -4,6 +4,7 @@
     <list default="true" id="1fd26ac0-b7a2-4c6f-b96d-3262340069a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Brain.js" beforeDir="false" afterPath="$PROJECT_DIR$/Brain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,7 @@
       <workItem from="1613745359759" duration="614000" />
       <workItem from="1613766672258" duration="5881000" />
       <workItem from="1613776000450" duration="1946000" />
-      <workItem from="1613832386861" duration="74000" />
+      <workItem from="1613832386861" duration="1861000" />
     </task>
     <servers />
   </component>
@@ -107,10 +108,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613602429343" />
-    <state x="2536" y="240" key="run.anything.popup" timestamp="1613740334912">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1613833751353">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613740334912" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613833751353" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613661719937">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

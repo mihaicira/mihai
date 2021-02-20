@@ -103,7 +103,6 @@ html,body{
 }
 #page2-border{
     padding: 1vw;
-    height: 3vw;
     width: 100%;
     background: rgb(86,31,19);
     background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
@@ -168,7 +167,6 @@ html,body{
 }
 #page3-border{
     padding: 1vw;
-    height: 3vw;
     width: 100%;
     background: rgb(86,31,19);
     background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
@@ -178,12 +176,12 @@ html,body{
     display: grid;
     margin-top: 4vw;
     justify-content: center;
-    grid-template-columns: repeat(16,5vw);
-    grid-template-rows: repeat(14,5vw);
+    grid-template-columns: repeat(16,6em);
+    grid-template-rows: repeat(14,6em);
 }
 
 .skillItem{
-    border: 1px solid transparent;
+    border: 1px solid red;
 }
 
 #pySKILL{
@@ -354,7 +352,6 @@ html,body{
 
 #page4-border{
     padding: 1vw;
-    height: 3vw;
     width: 100%;
     background: rgb(86,31,19);
     background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
@@ -410,12 +407,23 @@ html,body{
 
 /*###########################################################################################page5*/
 
+#page5{
+    text-align: center;
+}
 #page5-border{
     padding: 1vw;
-    height: 3vw;
     width: 100%;
     background: rgb(86,31,19);
     background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
     text-align: center;
     margin-bottom: 100%;
 }
+
+/*overall*/
+
+#skills-letter-spacing{
+    text-align: center;
+    margin: 0;
+}
+
+/*overall*/

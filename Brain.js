@@ -128,8 +128,8 @@ $(document).mousemove(function(e) {
     var relY = (e.pageY - $('#dexSKILL').offset().top) / 4;
      relX = Math.floor(relX);
      relY = Math.floor(relY);
-    if((lastX != relX || lastY != relY) &&(relX>=0 || relY >=0)){
-            console.log("X: "+relX+" | Y: "+relY);
+    if((lastX != relX || lastY != relY)){
+            // console.log("X: "+relX+" | Y: "+relY);
         $('#dexSKILL').css({'clip-path':'circle(25.0% at '+relX+'% '+relY+'%)'});
     }
 
@@ -137,6 +137,10 @@ $(document).mousemove(function(e) {
     lastY = relY;
 
 });
+
+$(document).ready(function(){
+    $("#pySKILL").trigger('click');
+})
 
 //##############################################################################################################page4
 
