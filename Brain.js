@@ -129,7 +129,7 @@ $(document).mousemove(function(e) {
      relX = Math.floor(relX);
      relY = Math.floor(relY);
     if((lastX != relX || lastY != relY) &&(relX>=0 || relY >=0)){
-            console.log("X: "+relX+" | Y: "+relY);// + " ~~~~~~~ LAST X: "+ lastX + " | LAST Y: " + lastY);
+            console.log("X: "+relX+" | Y: "+relY);
         $('#dexSKILL').css({'clip-path':'circle(25.0% at '+relX+'% '+relY+'%)'});
     }
 
