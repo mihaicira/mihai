@@ -363,13 +363,13 @@ html,body{
     margin-top: 5vw;
     justify-content: center;
     grid-template-columns: 30vw 30vw;
+    grid-template-rows: auto;
     column-gap: 15vw;
 }
 .about-Item{
     border: 2px solid white;
     border-top: none;
     padding: 10px;
-
     padding-bottom: 1cm;
 }
 #aboutMe{
@@ -436,5 +436,42 @@ html,body{
         grid-column: span 6;
         grid-row: span 6;
     }
+    .classroomLabItem,.officeAssistantItem{
+        line-height: 5px;
+    }
+    #about-container{
+        padding: 5vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 15vw;
+    }
+    .about-Item{
+        font-size: 10px;
+        line-height:30px;
+    }
+    .text_pair{
+        margin-top: 3rem;
+    }
+    #aboutMe{
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 35px;
+    }
+    #experience{
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 35px;
+    }
+    #skills-container{
+        padding-top: 15vw;
+        padding-bottom: 15vw;
+    }
+    #page3{
+        margin-top: 15vw;
+    }
+    #page5{
+        display: none;
+    }
+
 }
 /*overall*/
