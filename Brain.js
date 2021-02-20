@@ -119,13 +119,19 @@ skillsIds = {
     }
     document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem"></div>')
 }
+
+
 var lastX = 0;
 var lastY = 0;
+var value = 4;
 
 $(document).mousemove(function(e) {
 
-    var relX = (e.pageX -  $('#dexSKILL').offset().left) / 4;
-    var relY = (e.pageY - $('#dexSKILL').offset().top) / 4;
+    value = (($("#pySKILL").width() / 3)* 4) / 100;
+
+
+    var relX = (e.pageX -  $('#dexSKILL').offset().left) / value;
+    var relY = (e.pageY - $('#dexSKILL').offset().top) / value;
      relX = Math.floor(relX);
      relY = Math.floor(relY);
     if((lastX != relX || lastY != relY)){
@@ -137,6 +143,7 @@ $(document).mousemove(function(e) {
     lastY = relY;
 
 });
+
 
 $(document).ready(function(){
     $("#pySKILL").trigger('click');
