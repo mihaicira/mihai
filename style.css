@@ -180,14 +180,15 @@ html,body{
     grid-template-rows: repeat(14,5vw);
 }
 
+
 .skillItem{
     border: 1px solid transparent;
+
 }
 
 #pySKILL{
     grid-column: span 3;
     grid-row: span 3;
-    background: url(media/python2.png);
     background: url(media/python.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -426,4 +427,14 @@ html,body{
     margin: 0;
 }
 
+@media only screen and (max-width: 1300px) {
+    #skills-container {
+        grid-template-columns: repeat(16,5vw);
+        grid-template-rows: repeat(62,5vw);
+    }
+    #pySKILL,#swiftSKILL,#javaSKILL,#jsSKILL,#cSKILL,#htmlSKILL,#rubySKILL,#sqlSKILL{
+        grid-column: span 6;
+        grid-row: span 6;
+    }
+}
 /*overall*/

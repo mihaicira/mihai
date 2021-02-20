@@ -101,23 +101,53 @@ $(document).mousemove(function(e){
     $('#skills-letter-spacing').css({'letter-spacing':''+(e.pageY)/75 + 'px'})
 })
 var skillsIds;
-skillsIds = {
-    5: "pySKILL",
-    8: "swiftSKILL",
-    33: "javaSKILL",
-    44: "cSKILL",
-    71:"dexSKILL",
-    78: "htmlSKILL",
-    85: "jsSKILL",
-    118: "rubySKILL",
-    121: "sqlSKILL"
-}
-    for(i = 1 ; i <= 16 * 10; i++){
-    if(skillsIds[i]!= undefined){
-        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="'+skillsIds[i]+'"></div>')
-        continue;
+function renderDesktopSkills(){
+    skillsIds = {
+        5: "pySKILL",
+        8: "swiftSKILL",
+        33: "javaSKILL",
+        44: "cSKILL",
+        71:"dexSKILL",
+        78: "htmlSKILL",
+        85: "jsSKILL",
+        118: "rubySKILL",
+        121: "sqlSKILL"
     }
-    document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem"></div>')
+    for(i = 1 ; i <= 16 * 10; i++){
+        if(skillsIds[i]!= undefined){
+            document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="'+skillsIds[i]+'"></div>')
+            continue;
+        }
+        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem"></div>')
+    }
+}
+
+function renderMobileSkills(){
+    skillsIds = {
+        6: "pySKILL",
+        99: "swiftSKILL",
+        192: "javaSKILL",
+        285: "cSKILL",
+        378: "htmlSKILL",
+        471: "jsSKILL",
+        564: "rubySKILL",
+        657: "sqlSKILL"
+    }
+    for(i = 1 ; i <= 16 * 45; i++){
+        if(skillsIds[i]!= undefined){
+            document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="'+skillsIds[i]+'"></div>')
+            continue;
+        }
+        document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem"></div>')
+    }
+}
+if($(window).width() > 1300){
+    console.log("Desktop");
+    renderDesktopSkills();
+}
+else{
+    console.log("Mobile");
+    renderMobileSkills();
 }
 
 
@@ -126,6 +156,8 @@ var lastY = 0;
 var value = 4;
 
 $(document).mousemove(function(e) {
+    if($(window).width <= 1300)
+        return;
 
     value = (($("#pySKILL").width() / 3)* 4) / 100;
 
