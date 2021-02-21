@@ -472,6 +472,10 @@ html,body{
     #page5{
         display: none;
     }
+    #leftGridPhoto,#rightGridPhoto{
+        grid-column: span 5;
+        grid-row: span 5;
+    }
 
 }
 /*overall*/

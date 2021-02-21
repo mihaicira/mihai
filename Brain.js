@@ -1,30 +1,83 @@
-for(i=1 ; i<=16*5 ; i++){
-    if(i < 6){
-        document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem topBorder"></div>');
-        continue;
+var view = ""
+if($(window).width() > 1300)
+    view = "desktop";
+else
+    view = "mobile";
+
+$(window).on('resize', function(){
+    if($(window).width() > 1300 && view !== "desktop"){
+        view = "dekstop";
+        window.location = window.location.href;
     }
-    if(i > (16*5)-5){
-        document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem bottomBorder"></div>');
-        continue;
+    if($(window).width() <= 1300 && view == "desktop"){
+        view = "mobile";
+        window.location = window.location.href;
     }
-    if(i === 19){
-        document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem gridPhoto" id="leftGridPhoto"></div>');
-        continue;
+
+})
+
+
+function renderDesktopTop(){
+    for(i=1 ; i<=16*5 ; i++) {
+        if (i < 6) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem topBorder"></div>');
+            continue;
+        }
+        if (i > (16 * 5) - 5) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem bottomBorder"></div>');
+            continue;
+        }
+        if (i === 19) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem gridPhoto" id="leftGridPhoto"></div>');
+            continue;
+        }
+        if (i === 26) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem gridPhoto" id="rightGridPhoto"></div>');
+            continue;
+        }
+        if ([6, 21, 33, 44, 58, 75].includes(i)) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem topBorder rightBorder"></div>');
+            continue;
+        }
+        document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem"></div>')
     }
-    if(i === 26){
-        document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem gridPhoto" id="rightGridPhoto"></div>');
-        continue;
-    }
-    if([6,21,33,44,58,75].includes(i)){
-        document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem topBorder rightBorder"></div>');
-        continue;
-    }
-    document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem"></div>')
+
+    stItems = document.getElementsByClassName("stItem");
+
+    skillsSquares = [0,1,2,3,4,5,16,17,18,19,20,28,29,30,31,32,38,39,40,41,42,43,48,49,50,51,52,53,54,55,56,57,64,65,66,67,68,69,70,71,72,73,74];
 }
 
-stItems = document.getElementsByClassName("stItem");
+function renderMobileTop(){
+    for(i=1 ; i<=16*5 ; i++) {
+        if (i < 5) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem topBorder"></div>');
+            continue;
+        }
+        if (i > (16 * 5) - 5) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem bottomBorder"></div>');
+            continue;
+        }
+        if (i === 17) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem gridPhoto" id="leftGridPhoto"></div>');
+            continue;
+        }
+        if (i === 24) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem gridPhoto" id="rightGridPhoto"></div>');
+            continue;
+        }
+        if ([5, 18, 26, 33, 40, 47,59].includes(i)) {
+            document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem topBorder rightBorder"></div>');
+            continue;
+        }
+        document.getElementById("stGrid").insertAdjacentHTML("beforeend", '<div class="stItem"></div>')
+    }
 
-skillsSquares = [0,1,2,3,4,5,16,17,18,19,20,28,29,30,31,32,38,39,40,41,42,43,48,49,50,51,52,53,54,55,56,57,64,65,66,67,68,69,70,71,72,73,74];
+    stItems = document.getElementsByClassName("stItem");
+
+    skillsSquares = [0,1,2,3,4,5,16,17,18,19,20,28,29,30,31,32,38,39,40,41,42,43,48,49,50,51,52,53,54,55,56,57,64,65,66,67,68,69,70,71,72,73,74];
+}
+
+
 $(".gridPhoto").hover(function(){
     for(i = 0 ; i < stItems.length ; i++){
         if($('#leftGridPhoto').is(':hover')) {
@@ -71,6 +124,7 @@ $(".gridPhoto").hover(function(){
     }
 });
 
+
 $(document).mousemove(function(e){
     $('#projects-letter-spacing').css({'letter-spacing':''+(e.pageY)/25 + 'px'})
 })
@@ -100,7 +154,9 @@ $("#classroomLabImage").click(function(){
 $(document).mousemove(function(e){
     $('#skills-letter-spacing').css({'letter-spacing':''+(e.pageY)/75 + 'px'})
 })
+
 var skillsIds;
+
 function renderDesktopSkills(){
     skillsIds = {
         5: "pySKILL",
@@ -141,14 +197,7 @@ function renderMobileSkills(){
         document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem"></div>')
     }
 }
-if($(window).width() > 1300){
-    console.log("Desktop");
-    renderDesktopSkills();
-}
-else{
-    console.log("Mobile");
-    renderMobileSkills();
-}
+
 
 
 var lastX = 0;
@@ -156,7 +205,7 @@ var lastY = 0;
 var value = 4;
 
 $(document).mousemove(function(e) {
-    if($(window).width <= 1300)
+    if(view === "mobile")
         return;
 
     value = (($("#pySKILL").width() / 3)* 4) / 100;
@@ -199,4 +248,17 @@ $(document).mousemove(function(e){
 $(document).mousemove(function(e){
     $('#lounge-letter-spacing').css({'letter-spacing':''+(e.pageY)/140 + 'px'})
 })
+
+//##############################################################################################################general
+
+
+console.log(view);
+if(view === "desktop"){
+    renderDesktopTop();
+    renderDesktopSkills();
+}
+else{
+    renderMobileTop();
+    renderMobileSkills();
+}
 
