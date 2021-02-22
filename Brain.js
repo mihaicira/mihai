@@ -15,8 +15,6 @@ $(window).on('resize', function(){
     }
 })
 
-
-console.log(view);
 if(view === "desktop"){
     renderDesktopTop();
     renderDesktopSkills();
@@ -91,6 +89,8 @@ function renderMobileTop(){
 
 
 $(".gridPhoto").hover(function(){
+    if(view === "mobile")
+        return;
     for(i = 0 ; i < stItems.length ; i++){
         if($('#leftGridPhoto').is(':hover')) {
             if(skillsSquares.includes(i))
@@ -118,6 +118,8 @@ $(".gridPhoto").hover(function(){
         stItems[i].style.borderWidth="2px";
     }
 }, function(){
+    if(view === "mobile")
+        return;
     for(i = 0 ; i < stItems.length ; i++){
             stItems[i].style.borderColor="transparent";
             if(i<5){
@@ -138,6 +140,8 @@ $(".gridPhoto").hover(function(){
 
 
 $(document).mousemove(function(e){
+    if(view === "mobile")
+        return;
     $('#projects-letter-spacing').css({'letter-spacing':''+(e.pageY)/25 + 'px'})
 })
 
@@ -164,6 +168,8 @@ $("#classroomLabImage").click(function(){
 //#########################################################################################################page3
 
 $(document).mousemove(function(e){
+    if(view === "mobile")
+        return;
     $('#skills-letter-spacing').css({'letter-spacing':''+(e.pageY)/75 + 'px'})
 })
 
@@ -251,6 +257,8 @@ $(document).ready(function(){
 //##############################################################################################################page4
 
 $(document).mousemove(function(e){
+    if(view === "mobile")
+        return;
     $('#about-letter-spacing').css({'letter-spacing':''+(e.pageY)/95 + 'px'})
 })
 
@@ -258,6 +266,7 @@ $(document).mousemove(function(e){
 //##############################################################################################################page5
 
 $(document).mousemove(function(e){
+
     $('#lounge-letter-spacing').css({'letter-spacing':''+(e.pageY)/140 + 'px'})
 })
 
