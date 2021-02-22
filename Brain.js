@@ -16,7 +16,6 @@ $(window).on('resize', function(){
 
 })
 
-
 function renderDesktopTop(){
     for(i=1 ; i<=16*5 ; i++) {
         if (i < 6) {
@@ -77,6 +76,9 @@ function renderMobileTop(){
     skillsSquares = [0,1,2,3,4,5,16,17,18,19,20,28,29,30,31,32,38,39,40,41,42,43,48,49,50,51,52,53,54,55,56,57,64,65,66,67,68,69,70,71,72,73,74];
 }
 
+$("#leftGr").hover(function(){
+    console.log("heya");
+})
 
 $(".gridPhoto").hover(function(){
     for(i = 0 ; i < stItems.length ; i++){

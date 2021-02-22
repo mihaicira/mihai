@@ -50,8 +50,7 @@ html,body{
 }
 .stItem{
     border: 2px solid transparent;
-    transition: .35s;
-
+    transition: .35s;left
 }
 
 .topBorder{

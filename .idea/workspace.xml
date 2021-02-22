@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fd26ac0-b7a2-4c6f-b96d-3262340069a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mihai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mihai.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Brain.js" beforeDir="false" afterPath="$PROJECT_DIR$/Brain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -35,7 +38,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../unischedule" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -44,7 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ciram\WebstormProjects\unischedule" />
       <recent name="C:\Users\ciram\WebstormProjects\mihai" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ciram\WebstormProjects\unischedule" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.text_scramble.js">
@@ -83,7 +90,11 @@
       <workItem from="1613838603666" duration="62000" />
       <workItem from="1613839329367" duration="1566000" />
       <workItem from="1613861306229" duration="247000" />
-      <workItem from="1613909026043" duration="968000" />
+      <workItem from="1613909026043" duration="1030000" />
+      <workItem from="1613913500522" duration="330000" />
+      <workItem from="1613974233350" duration="5754000" />
+      <workItem from="1613985521086" duration="5687000" />
+      <workItem from="1613995900505" duration="771000" />
     </task>
     <servers />
   </component>
@@ -115,6 +126,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613602429343" />
+    <state x="2697" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1613990964882">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2697" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613990964882" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1613833751353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
