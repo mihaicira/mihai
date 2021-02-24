@@ -9,5 +9,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="unischedule" />
+    <orderEntry type="module" module-name="ClassroomLab" />
+    <orderEntry type="module" module-name="v6.2 More Outputs 2 added" />
   </component>
 </module>
