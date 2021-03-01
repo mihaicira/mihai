@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../ClassroomLab/.idea/ClassroomLab.iml" filepath="$PROJECT_DIR$/../ClassroomLab/.idea/ClassroomLab.iml" />
+      <module fileurl="file://D:/Others/CL/ClassroomLab New/.idea/ClassroomLab.iml" filepath="D:/Others/CL/ClassroomLab New/.idea/ClassroomLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mihai.iml" filepath="$PROJECT_DIR$/.idea/mihai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/../unischedule/.idea/unischedule.iml" filepath="$PROJECT_DIR$/../unischedule/.idea/unischedule.iml" />
       <module fileurl="file://D:/Others/CL/v6.2 More Outputs 2 added/.idea/v6.2 More Outputs 2 added.iml" filepath="D:/Others/CL/v6.2 More Outputs 2 added/.idea/v6.2 More Outputs 2 added.iml" />
     </modules>

@@ -409,6 +409,7 @@ html,body{
 
 #page5{
     text-align: center;
+    z-index: -2;
 }
 #page5-border{
     padding: 1vw;
@@ -416,14 +417,43 @@ html,body{
     background: rgb(86,31,19);
     background: radial-gradient(circle, rgba(86,31,19,1) 49%, rgba(245,222,179,1) 250%);
     text-align: center;
-    margin-bottom: 100%;
 }
+
 
 /*overall*/
 
 #skills-letter-spacing{
     text-align: center;
     margin: 0;
+}
+
+#popup{
+    position: fixed;
+    padding: 10px;
+    right: 0;
+    margin: 1vw;
+    background: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    text-align: center;
+}
+#popup h3{
+    font-size: 1.2vw;
+}
+#popup label{
+    font-size: 1vw;
+}
+#XNO{
+text-align: right;
+    cursor: pointer;
+}
+#XNO span{
+    font-size: 1.8vw;
+    margin: 1vw;
+    color: white;
+    padding-right: 4px;
+    padding-left: 4px;
+    border: 1px solid white;
 }
 
 @media only screen and (max-width: 1300px) {

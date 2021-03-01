@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="media/dexter.png"/>
 
 
+    <link rel="stylesheet" href="mihai.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQN0W303TB"></script>
@@ -23,6 +24,17 @@
 </head>
 
 <body>
+<div id="popup" style="display: none;">
+    <h3>Hello, would you tell me the reason you're  here?</h3>
+    <input type="checkbox" id="option_1" name="option_1" value="option_1" onclick="saveInfo('out of curiosity')">
+    <label for="option_1"> Out of curiosity</label><br>
+
+    <input type="checkbox" id="option_2" name="option_2" value="option_2" onclick="saveInfo('profesionally')">
+    <label for="option_2"> Profesionally</label><br>
+
+    <p id="XNO" onclick="saveInfo('close')"><span>X</span>No</p>
+
+</div>
 <div id="page1">
     <div id="navbar">
         <div class="scrambled_container">
@@ -110,13 +122,35 @@
             <h4>Mobile Development Internship at [E-spres-oh]<span>&emsp;&ndash;&emsp; 2020</span></h4>
         </div>
     </div>
-
-
 </div>
 
 
 <div id="page5">
     <div id="page5-border"><h2 id="lounge-letter-spacing" class="page5-border">lounge</h2></div>
+    <div class="Mihai">
+        <div class="head">
+            <div class="brows">
+                <div class="brow" id="brow1"></div>
+                <div class="brow" id="brow2"></div>
+            </div>
+            <div class="eyes">
+                <div class="eye" id="eye1"></div>
+                <div class="eye" id="eye2"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth">
+                <div class="tongue"></div>
+            </div>
+            <div class="ears">
+                <div class="ear"></div>
+                <div class="ear"></div>
+            </div>
+            <div class="hair">
+                <div class="hairhelp"></div>
+                <div class="hairhelp"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

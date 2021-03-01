@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fd26ac0-b7a2-4c6f-b96d-3262340069a4" name="Default Changelist" comment="">
+    <list default="true" id="1fd26ac0-b7a2-4c6f-b96d-3262340069a4" name="Default Changelist" comment="analitycs added">
+      <change afterPath="$PROJECT_DIR$/mihai.css" afterDir="false" />
+      <change afterPath="D:/Others/CL/ClassroomLab New/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mihai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mihai.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brain.js" beforeDir="false" afterPath="$PROJECT_DIR$/Brain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="D:/Others/CL/ClassroomLab New/index.html" beforeDir="false" afterPath="D:/Others/CL/ClassroomLab New/index.html" afterDir="false" />
+      <change beforePath="D:/Others/CL/ClassroomLab New/pages/About.html" beforeDir="false" afterPath="D:/Others/CL/ClassroomLab New/pages/About.html" afterDir="false" />
+      <change beforePath="D:/Others/CL/ClassroomLab New/pages/Outputs.html" beforeDir="false" afterPath="D:/Others/CL/ClassroomLab New/pages/Outputs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -25,6 +53,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1od2YXgwyoeHH7dsqjBPkpf0G8i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,11 +67,11 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ClassroomLab" />
+    <property name="last_opened_file_path" value="D:/Others/CL/ClassroomLab New" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -52,6 +83,7 @@
       <recent name="C:\Users\ciram\WebstormProjects\unischedule" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ciram\WebstormProjects\mihai" />
       <recent name="C:\Users\ciram\WebstormProjects\ClassroomLab\pages\storage" />
       <recent name="C:\Users\ciram\WebstormProjects\unischedule" />
     </key>
@@ -104,58 +136,95 @@
       <workItem from="1614165785016" duration="228000" />
       <workItem from="1614183266805" duration="2608000" />
       <workItem from="1614185910157" duration="3738000" />
-      <workItem from="1614190358141" duration="1360000" />
+      <workItem from="1614190358141" duration="2498000" />
+      <workItem from="1614285132087" duration="791000" />
+      <workItem from="1614343212391" duration="3114000" />
+      <workItem from="1614427230775" duration="1102000" />
+      <workItem from="1614462560117" duration="2216000" />
+      <workItem from="1614541078759" duration="9885000" />
+      <workItem from="1614590133067" duration="1077000" />
     </task>
+    <task id="LOCAL-00001" summary="analitycs added">
+      <created>1614191837948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614191837948</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="analitycs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="analitycs added" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614184351355">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614541266676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614184351355" />
-    <state x="592" y="218" key="FileChooserDialogImpl" timestamp="1614113149173">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614541266676" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1614285887941">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614113149173" />
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614104262593" />
-    <state width="1515" height="184" key="GridCell.Tab.0.bottom" timestamp="1613838542588">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614285887941" />
+    <state width="1515" height="247" key="GridCell.Tab.0.bottom" timestamp="1614346349314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613838542588" />
+    <state width="1515" height="247" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614346349314" />
     <state width="1899" height="248" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613647829149" />
-    <state width="1515" height="184" key="GridCell.Tab.0.center" timestamp="1613838542588">
+    <state width="1515" height="247" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1614345112436" />
+    <state width="1515" height="247" key="GridCell.Tab.0.center" timestamp="1614346349314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613838542588" />
+    <state width="1515" height="247" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614346349314" />
     <state width="1899" height="248" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613647829149" />
-    <state width="1515" height="184" key="GridCell.Tab.0.left" timestamp="1613838542588">
+    <state width="1515" height="247" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1614345112436" />
+    <state width="1515" height="247" key="GridCell.Tab.0.left" timestamp="1614346349314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613838542588" />
+    <state width="1515" height="247" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614346349314" />
     <state width="1899" height="248" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613647829149" />
-    <state width="1515" height="184" key="GridCell.Tab.0.right" timestamp="1613838542588">
+    <state width="1515" height="247" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1614345112434" />
+    <state width="1515" height="247" key="GridCell.Tab.0.right" timestamp="1614346349314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="184" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613838542588" />
+    <state width="1515" height="247" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614346349314" />
     <state width="1899" height="248" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613647829149" />
+    <state width="1515" height="247" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1614345112436" />
     <state x="566" y="133" key="RollbackChangesDialog" timestamp="1614113419337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="133" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614113419337" />
-    <state x="2381" y="165" key="SettingsEditor" timestamp="1613602429343">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="369" y="115" key="SettingsEditor" timestamp="1614346206396">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="369" y="115" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614346206396" />
     <state x="2381" y="165" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613602429343" />
     <state x="2697" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1613990964882">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2697" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613990964882" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1613833751353">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="493" y="190" width="538" height="537" key="run.anything.popup" timestamp="1614541275132">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="493" y="190" width="538" height="537" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614541275132" />
     <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613740334912" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613833751353" />
     <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1614117098929">

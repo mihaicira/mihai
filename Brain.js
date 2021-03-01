@@ -9,7 +9,7 @@ $(window).on('resize', function(){
         view = "dekstop";
         window.location = window.location.href;
     }
-    if($(window).width() <= 1300 && view == "desktop"){
+    if($(window).width() <= 1300 && view === "desktop"){
         view = "mobile";
         window.location = window.location.href;
     }
@@ -133,7 +133,6 @@ $(".gridPhoto").hover(function(){
             }
             if(i > (16*5) -6){
                 stItems[i].style.borderBottomColor = "wheat";
-                continue;
             }
     }
 });
@@ -188,7 +187,7 @@ function renderDesktopSkills(){
         121: "sqlSKILL"
     }
     for(i = 1 ; i <= 16 * 10; i++){
-        if(skillsIds[i]!= undefined){
+        if(skillsIds[i]!== undefined){
             document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="'+skillsIds[i]+'"></div>')
             continue;
         }
@@ -208,7 +207,7 @@ function renderMobileSkills(){
         657: "sqlSKILL"
     }
     for(i = 1 ; i <= 16 * 45; i++){
-        if(skillsIds[i]!= undefined){
+        if(skillsIds[i]!== undefined){
             document.getElementById("skills-container").insertAdjacentHTML('beforeend','<div class="skillItem" id="'+skillsIds[i]+'"></div>')
             continue;
         }
@@ -233,7 +232,7 @@ $(document).mousemove(function(e) {
     var relY = (e.pageY - $('#dexSKILL').offset().top) / value;
      relX = Math.floor(relX);
      relY = Math.floor(relY);
-    if((lastX != relX || lastY != relY)){
+    if((lastX !== relX || lastY !== relY)){
             // console.log("X: "+relX+" | Y: "+relY);
         $('#dexSKILL').css({'clip-path':'circle(25.0% at '+relX+'% '+relY+'%)'});
     }
@@ -272,3 +271,129 @@ $(document).mousemove(function(e){
 
 //##############################################################################################################general
 
+
+function saveInfo(arg){
+    if(arg === 'close'){
+        $("#popup").css({'display':"none"})
+    }
+    else{
+        if(arg === 'out of curiosity')
+            console.log("heya")
+        console.log("i'm here")
+        let data = "heya"
+        fs.writeFile("data.txt",data,(err)=>{
+            console.log("error")
+        })
+        console.log("writing done")
+    }
+}
+
+//##############################################################################################################face animations
+var animation = false
+$(".eye").hover(function(){
+    if($("#eye1").is(':hover') && !animation){
+        animation = true
+        left_blink()
+    }
+    if($("#eye2").is(':hover') && !animation) {
+        animation = true
+        right_blink()
+    }
+})
+$(".mouth").hover(function(){
+    if(!animation){
+        animation = true
+        tongue()
+    }
+})
+$(".nose").hover(function(){
+    if(!animation){
+        animation = true
+        nose()
+    }
+})
+$(".hair").hover(function(){
+    if(!animation){
+        animation = true
+        hair()
+    }
+})
+
+function left_blink(){
+    $("#brow1").css({"border-radius":" 30% 55% 0 0"})
+    $("#eye1").css({"border-top-width":"1.08vw",
+        "border-bottom-width":"1.08vw"
+    })
+    setTimeout(function(){
+        $("#eye1").css({"border-top-width":"initial",
+            "border-bottom-width":"initial"
+        })
+        $("#brow1").css({"border-radius":"20% 20% 0 0"})
+
+        setTimeout(function(){animation = false},300)
+    },100)
+}
+
+function right_blink(){
+    $("#brow2").css({"border-radius":" 55% 30% 0 0"})
+    $("#eye2").css({"border-top-width":"1.08vw",
+        "border-bottom-width":"1.08vw"
+    })
+    setTimeout(function(){
+        $("#eye2").css({"border-top-width":"initial",
+            "border-bottom-width":"initial"
+        })
+        $("#brow2").css({"border-radius":"20% 20% 0 0"})
+
+        setTimeout(function(){animation = false},300)
+    },100)
+}
+
+function tongue(){
+    $(".tongue").css({"opacity":"1", "height":"2vw"})
+    $(".mouth").css({"height":"2.2vw"})
+    $("#brow1").css({"border-radius":" 10% 50% 0 0","transform":"rotate(-10deg)"})
+    $("#brow2").css({"border-radius":" 50% 10% 0 0","transform":"rotate(10deg)"})
+    $("#eye1").css({"border-bottom-width":".3vw"})
+    $("#eye2").css({"border-bottom-width":".3vw"})
+
+    setTimeout(function(){
+        $(".tongue").css({"opacity":"0", "height":"0vw"})
+        $(".mouth").css({"height":"2.7vw"})
+        $("#brow1").css({"border-radius":" 20% 20% 0 0","transform":"rotate(0deg)"})
+        $("#brow2").css({"border-radius":" 20% 20% 0 0","transform":"rotate(0deg)"})
+        $("#eye1").css({"border-bottom-width":"initial"})
+        $("#eye2").css({"border-bottom-width":"initial"})
+
+        setTimeout(function(){animation = false},400)
+    },300)
+}
+
+function nose(){
+    $(".nose").css({"transform": "skew(15deg)"})
+    $("#brow1").css({"border-radius":" 10% 50% 0 0","transform":"rotate(10deg)"})
+    $("#brow2").css({"border-radius":" 50% 10% 0 0","transform":"rotate(-10deg)"})
+    $("#eye1").css({"border-top-width":".5vw","transform":"rotate(10deg)"})
+    $("#eye2").css({"border-top-width":".5vw","transform":"rotate(-10deg)"})
+    $(".mouth").css({"height":"1.5vw"})
+    setTimeout(function(){
+        $(".nose").css({"transform": "skew(0deg)"})
+        $("#brow1").css({"border-radius":" 20% 20% 0 0","transform":"rotate(0deg)"})
+        $("#brow2").css({"border-radius":" 20% 20% 0 0","transform":"rotate(0deg)"})
+        $("#eye1").css({"border-top-width":"initial","transform":"rotate(0deg)"});
+        $("#eye2").css({"border-top-width":"initial","transform":"rotate(0deg)"});
+        $(".mouth").css({"height":"2.7vw"})
+        setTimeout(function(){animation = false},400)
+    },300)
+}
+
+function hair(){
+    $(".hair").css({"border-radius": "30% 100% 0 0"})
+    // $(".eye").before().css({"transform": "translate(-15%,-10%)"})
+    // $(".eye").before().css({"background": "blue"})
+    setTimeout(function(){
+        $(".hair").css({"border-radius": "100% 30% 0 0"})
+        // $(".eye::before").css({"transform": "translate(-25%,-5%)"})
+        setTimeout(function(){animation = false},400)
+    },300)
+}
