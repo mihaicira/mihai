@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fd26ac0-b7a2-4c6f-b96d-3262340069a4" name="Default Changelist" comment="analitycs added">
-      <change afterPath="$PROJECT_DIR$/mihai.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwarf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/cursor.png" afterDir="false" />
       <change afterPath="D:/Others/CL/ClassroomLab New/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mihai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mihai.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Brain.js" beforeDir="false" afterPath="$PROJECT_DIR$/Brain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mihai.css" beforeDir="false" afterPath="$PROJECT_DIR$/mihai.css" afterDir="false" />
       <change beforePath="D:/Others/CL/ClassroomLab New/index.html" beforeDir="false" afterPath="D:/Others/CL/ClassroomLab New/index.html" afterDir="false" />
       <change beforePath="D:/Others/CL/ClassroomLab New/pages/About.html" beforeDir="false" afterPath="D:/Others/CL/ClassroomLab New/pages/About.html" afterDir="false" />
       <change beforePath="D:/Others/CL/ClassroomLab New/pages/Outputs.html" beforeDir="false" afterPath="D:/Others/CL/ClassroomLab New/pages/Outputs.html" afterDir="false" />
@@ -75,16 +69,17 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ciram\WebstormProjects\mihai\media" />
+      <recent name="C:\Users\ciram\WebstormProjects\mihai" />
+      <recent name="C:\Users\ciram\WebstormProjects\ClassroomLab\pages\storage" />
+      <recent name="C:\Users\ciram\WebstormProjects\unischedule" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ciram\WebstormProjects\ClassroomLab" />
       <recent name="C:\Users\ciram\WebstormProjects\ClassroomLab\pages" />
       <recent name="C:\Users\ciram\WebstormProjects\ClassroomLab\pages\logos" />
       <recent name="C:\Users\ciram\WebstormProjects\ClassroomLab\pages\mycss" />
-      <recent name="C:\Users\ciram\WebstormProjects\unischedule" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ciram\WebstormProjects\mihai" />
-      <recent name="C:\Users\ciram\WebstormProjects\ClassroomLab\pages\storage" />
       <recent name="C:\Users\ciram\WebstormProjects\unischedule" />
     </key>
   </component>
@@ -142,7 +137,7 @@
       <workItem from="1614427230775" duration="1102000" />
       <workItem from="1614462560117" duration="2216000" />
       <workItem from="1614541078759" duration="9885000" />
-      <workItem from="1614590133067" duration="1077000" />
+      <workItem from="1614590133067" duration="1970000" />
     </task>
     <task id="LOCAL-00001" summary="analitycs added">
       <created>1614191837948</created>
